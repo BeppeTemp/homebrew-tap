@@ -6,28 +6,28 @@ cask "cartographer" do
     end
   end
 
-  version "0.15.0"
+  version "0.16.0"
 
   on_macos do
     on_arm do
-      sha256 "48ce400f98e3019ac24e814292211c28343d126260b18bf7dd27b5759f38f6fd"
+      sha256 "3e9533fb87c33b7e77c58682a811cf33a3243111c92e154ff51189af2dc4239d"
       url "https://github.com/BeppeTemp/cartographer/releases/download/v#{version}/cartographer-darwin-arm64"
       binary "cartographer-darwin-arm64", target: "cartographer"
     end
     on_intel do
-      sha256 "d9567fb56ededf3c5fbec189b397b2bc5f41bde2877f13209d2a512b15edf15e"
+      sha256 "fef93a5103a0486f40fe246dcb7b960f597f1da428cf29490a3a29630f50a126"
       url "https://github.com/BeppeTemp/cartographer/releases/download/v#{version}/cartographer-darwin-amd64"
       binary "cartographer-darwin-amd64", target: "cartographer"
     end
   end
   on_linux do
     on_arm do
-      sha256 "eeda78dd440e5239f0db1f10220ca5fbb95ee883081096824d3fd541a0b46e0c"
+      sha256 "21d71e609e048c29952dfda4e556f95939846435ca7d914232c3b3a9330ab6d9"
       url "https://github.com/BeppeTemp/cartographer/releases/download/v#{version}/cartographer-linux-arm64"
       binary "cartographer-linux-arm64", target: "cartographer"
     end
     on_intel do
-      sha256 "63db1718693d5f6034ea1f64f96be7f582e77ad6015f91eadcb1d4b31b231341"
+      sha256 "024e1b8751c0e30c3f306a5d6ee596bd491868860a55b5ac3289e2776c72b811"
       url "https://github.com/BeppeTemp/cartographer/releases/download/v#{version}/cartographer-linux-amd64"
       binary "cartographer-linux-amd64", target: "cartographer"
     end
