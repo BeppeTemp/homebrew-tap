@@ -6,28 +6,28 @@ cask "cartographer" do
     end
   end
 
-  version "0.27.3"
+  version "0.28.0"
 
   on_macos do
     on_arm do
-      sha256 "b7ca17bb3432c20d342c77f5d4c6dd4c62c8d78f262ee8783e67460fc9fc4b6c"
+      sha256 "fcc09a6a5eab283732050192fca1b2c8434baab0604ac33c8fdd78a85d34e5c9"
       url "https://github.com/BeppeTemp/cartographer/releases/download/v#{version}/cartographer-darwin-arm64"
       binary "cartographer-darwin-arm64", target: "cartographer"
     end
     on_intel do
-      sha256 "d13e3752e77b941b99320bc0efaa41d83d4b39a91944bc2bcd0103e2f2eca340"
+      sha256 "b29f10638c13e741bf1df81550b73b790d6384e03e40cbe8dfd4ef53ce86d0be"
       url "https://github.com/BeppeTemp/cartographer/releases/download/v#{version}/cartographer-darwin-amd64"
       binary "cartographer-darwin-amd64", target: "cartographer"
     end
   end
   on_linux do
     on_arm do
-      sha256 "b8cbee8d73565814ed84ca58fd116a01675ed57bd5e697d77c4d81c1eecb0602"
+      sha256 "99770702d7235de7c1df242a1939ff2058bf46fc9f111b137e4787bf9807f8bb"
       url "https://github.com/BeppeTemp/cartographer/releases/download/v#{version}/cartographer-linux-arm64"
       binary "cartographer-linux-arm64", target: "cartographer"
     end
     on_intel do
-      sha256 "4e649202fba7d6a6090aa3b9d77baaa4f3ae34065857a7c3339899e2bc10a9d1"
+      sha256 "e347a2703d54d2e21d42e00ed55bb47d8d1ebef77d2acdd50de857c1221fefb7"
       url "https://github.com/BeppeTemp/cartographer/releases/download/v#{version}/cartographer-linux-amd64"
       binary "cartographer-linux-amd64", target: "cartographer"
     end
@@ -41,7 +41,7 @@ cask "cartographer" do
     skip "Auto-generated on release."
   end
 
-  # No zap stanza required
+  zap :not_required
 
   caveats <<~EOS
     First install: cartographer setup   (server, first knowledge base and agents, in one guided step)
